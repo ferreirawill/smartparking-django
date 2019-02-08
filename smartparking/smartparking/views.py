@@ -1,5 +1,7 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('Hello World')
+    var = "Variavel no HTML"
+    return render(request,'index.html', {'var': var})
