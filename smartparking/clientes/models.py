@@ -24,6 +24,7 @@ class Cliente(models.Model):
     email = models.EmailField()
     doc = models.OneToOneField(DOC, on_delete = models.CASCADE)
     depart = models.ManyToManyField(Depart)
+    image = models.ImageField(upload_to = 'cliente_fotos')
     def __str__(self):
         return self.nome
 

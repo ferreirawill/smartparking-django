@@ -4,7 +4,7 @@ from .models import Cliente, Tel, DOC, Depart
 # Register your models here.
 
 class AdminShown(admin.ModelAdmin):
-    fields = ('nome', 'doc','depart','salario','idade')
+   #fields = ('nome', 'doc','depart','salario','idade','image ')
     list_display =('nome','salario','email')
     list_filter = ('depart',)
     search_fields = ('nome',)

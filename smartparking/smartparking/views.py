@@ -3,5 +3,11 @@ from django.shortcuts import render
 
 
 def home(request):
-    var = "Variavel no HTML"
-    return render(request,'index.html', {'var': var})
+    sexo ='m'
+    nome = "Joaquina"
+    lista = [{'nome':'William', 'sexo':'m'},
+             {'nome':'Carlos', 'sexo':'m'},
+             {'nome':'Letícia', 'sexo':'f'},
+             {'nome':'Maria', 'sexo':'f'},
+        ]
+    return render(request,'index.html', {'lista':lista,'nome': nome, 'sexo': sexo})

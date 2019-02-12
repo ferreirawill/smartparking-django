@@ -1,0 +1,5 @@
+{
+    "python.venvPath": "/home/william/.virtualenvs",
+    "typescript.suggestionActions.enabled": false,
+    "python.pythonPath": "/home/william/.virtualenvs/web/bin/python"
+}
