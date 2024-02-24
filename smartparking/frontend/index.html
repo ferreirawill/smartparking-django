@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Smartparking
+{% endblock title %}
+
+
+
+{% block main %}
+<h1>Estudos HTML : Utilizando Jinja
+</h1>
+<ul>bl
+    <li> item 2</li>
+    <li> item 2</li>
+    <li> item 2</li>
+    <li> item 2</li>
+</ul>
+<h3 class = "smartparking"> Condicionais</h3>
+{% if sexo == 'm' %}
+     Olá senhor {{nome}}
+{% elif sexo == 'f' %}
+    Olá senhora {{nome}}
+{% else %}
+    Olá,{{nome}}
+ {%endif%}
+<br>
+<br>
+<h3 class = "smartparking" > Loops</h3>
+ {% for pessoa in lista %}
+   
+    {% if pessoa.sexo == 'm' %}
+         Olá senhor {{pessoa.nome}}
+    {% elif pessoa.sexo == 'f' %}
+         Olá senhora {{pessoa.nome}}
+    {%endif%}
+    <br>
+ {% endfor %}
+
+ <button type = "button" class="btn btn-primary" onclick ="helloWorld()">Clique aqui</button>
+{% endblock main %}
+
+
+{% block footer %}
+    {% include "footer.html"%}
+{% endblock footer %}
